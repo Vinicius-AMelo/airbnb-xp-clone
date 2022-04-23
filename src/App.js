@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
-function App() {
+import Nav from './components/nav'
+import Hero from './components/hero'
+import Cards from './components/cards'
+import Kate from "./components/images/katie-zaferes.png"
+import Wedding from "./components/images/casamento.jpeg"
+import Bike from "./components/images/bike.jpeg"
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='main-app'>
+    <Nav />
+    <Hero />
+    <div className='cards'>
+    <Cards
+      img={Kate}
+      rate={'5.0 '}
+      ratings={6}
+      country='USA'
+      title='Life lessons with Katie Zaferes'
+      value={136}
+    />
+    <Cards
+    img={Wedding}
+    rate={'5.0 '}
+    ratings={30}
+    country='USA'
+    title='Learn wedding photography'
+    value={125}
+    />
+    <Cards
+    img={Bike}
+    rate= {'4.8 '}
+    ratings={2}
+    country='USA'
+    title='Group Mountain Biking'
+    value={50}
+    />
+    </div>
     </div>
   );
 }
 
-export default App;

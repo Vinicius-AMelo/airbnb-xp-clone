@@ -1,0 +1,22 @@
+.card{
+    width: 175px;
+    font-size: 12px;
+    margin: 40px 0;
+    position: relative;
+    left: 37px;
+}
+
+
+.card--image{
+    width: 172px;
+    height: 235px;
+    border-radius: 9px;    
+}
+
+
+.star--image{
+    width: 14px;
+}
+.texto--cards{
+    margin: 0;
+}

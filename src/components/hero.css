@@ -1,0 +1,17 @@
+#grid-nav {
+    background-image: url('./images/photo-grid.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 395px 232px;
+    height: 290px;
+}
+
+.texto {
+    margin: 8px 36px;
+}
+
+.paragrafo {
+    width: 320px;
+    font-size: 16px;
+    line-height: 110%;
+}
