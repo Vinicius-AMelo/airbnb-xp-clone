@@ -20,5 +20,5 @@ body {
 }
 .cards{
   display: flex;
-  gap: 18px;
+  justify-content: space-evenly;
 }

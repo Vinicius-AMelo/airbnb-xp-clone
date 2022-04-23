@@ -4,8 +4,8 @@ import Nav from './components/nav'
 import Hero from './components/hero'
 import Cards from './components/cards'
 import Kate from "./components/images/katie-zaferes.png"
-import Wedding from "./components/images/casamento.jpeg"
-import Bike from "./components/images/bike.jpeg"
+import Wedding from "./components/images/casamento.png"
+import Bike from "./components/images/bike.png"
 export default function App() {
   return (
     <div id='main-app'>

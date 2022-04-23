@@ -1,14 +1,12 @@
 .card{
-    width: 175px;
+    width: 170px;
     font-size: 12px;
     margin: 40px 0;
-    position: relative;
-    left: 37px;
 }
 
 
 .card--image{
-    width: 172px;
+    width: 100%;
     height: 235px;
     border-radius: 9px;    
 }
