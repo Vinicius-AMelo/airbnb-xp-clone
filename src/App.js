@@ -3,40 +3,23 @@ import './App.css';
 import Nav from './components/nav'
 import Hero from './components/hero'
 import Cards from './components/cards'
-import Kate from "./components/images/katie-zaferes.png"
-import Wedding from "./components/images/casamento.png"
-import Bike from "./components/images/bike.png"
+import CardsData from './components/cardsData'
+
+const cards = CardsData.map(card => {
+  return <Cards
+    key={card.id} img={card.img} rate={card.rate} ratings={card.ratings}
+    location={card.location} title={card.title} value={card.value} openSpots={card.openSpots}
+  />
+})
+
 export default function App() {
   return (
     <div id='main-app'>
-    <Nav />
-    <Hero />
-    <div className='cards'>
-    <Cards
-      img={Kate}
-      rate={'5.0 '}
-      ratings={6}
-      country='USA'
-      title='Life lessons with Katie Zaferes'
-      value={136}
-    />
-    <Cards
-    img={Wedding}
-    rate={'5.0 '}
-    ratings={30}
-    country='USA'
-    title='Learn wedding photography'
-    value={125}
-    />
-    <Cards
-    img={Bike}
-    rate= {'4.8 '}
-    ratings={2}
-    country='USA'
-    title='Group Mountain Biking'
-    value={50}
-    />
-    </div>
+      <Nav />
+      <Hero />
+      <div className='cards'>
+        {cards}
+      </div>
     </div>
   );
 }
