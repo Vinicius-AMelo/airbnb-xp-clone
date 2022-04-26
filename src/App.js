@@ -5,10 +5,9 @@ import Hero from './components/hero'
 import Cards from './components/cards'
 import CardsData from './components/cardsData'
 
-const cards = CardsData.map(card => {
+const cards = CardsData.map(item => {
   return <Cards
-    key={card.id} img={card.img} rate={card.rate} ratings={card.ratings}
-    location={card.location} title={card.title} value={card.value} openSpots={card.openSpots}
+    key={item.id} {...item}
   />
 })
 
